@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Piazza History Keybindings
 // @namespace    https://piazza.com
-// @version      0.1
+// @version      0.2
 // @description  Use left and right arrows to navigate Piazza post history
-// @author       David Harris
+// @author       David Harris, Yuto Takano
 // @match        https://piazza.com/*
 // @grant        none
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
@@ -23,6 +23,13 @@ function moveHistorySlider(increment) {
 
 $(document).ready(function () {
     $(document).keydown(function(e) {
+        var element;
+		if(e.target) element = e.target;
+		else if(e.srcElement) element = e.srcElement;
+		if(element.nodeType == 3) element = element.parentNode;
+
+        if(element.tagName.toLowerCase() == "input" || element.tagName.toLowerCase() == "textarea") return;
+        
         switch(e.which) {
             case 37:
                 moveHistorySlider(-1);
