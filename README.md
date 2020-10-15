@@ -1,15 +1,20 @@
-# PiazzaHistoryKeybindings
-Userscript to add arrow keybindings to navigate history in Piazza posts
+# PiazzaKeybindings
+
+A userscript to add arrow keybindings to navigate Piazza posts. This is a fork of [PiazzaHistoryKeybindings, by drharris](https://github.com/drharris/PiazzaHistoryKeybindings).
 
 ## Installation
+
 First, you need some type of userscript extension on your browser, such as GreaseMonkey or TamperMonkey.
 
-Next, Navigate here: https://greasyfork.org/en/scripts/376513-piazza-history-keybindings
+Next, click [here](https://github.com/yutotakano/PiazzaKeybindings/raw/master/PiazzaKeybindings.user.js) to install the script.
 
-You should be able to click the installation button on that website to install this.
+## Features
 
-## Operation
-On a Piazza post, simply use the Left/Right arrow keys to navigate the history of the post. Simple as that!
+On a Piazza post:
+
+- Left/Right arrow keys navigate the history of a post.
+- Up/Down arrow keys navigate through the list of posts.
 
 ## Bugs/Suggestions
-While I'd like to keep this script simple, if you have any problems or suggestions within the scope of this script, please open an issue here on Github.
+
+I am open to any bugs/suggestions and pull requests.
